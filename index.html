@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.png" sizes="152x152">
+</head>
+
+<body>
+    <video autoplay muted id="myVideo">
+        <source src="img/video.webm" type="video/webm">
+    </video>
+
+    <!-- Icon section -->
+    <div class="icons">
+        <div>
+            <img src="img/icons/chromeicon.png" alt="" style="width: 44px;">
+            <div>Google Chrome</div>
+        </div>
+
+        <div>
+            <img src="img/icons/edgeicon.png" alt="" style="width: 44px;">
+            <div>Microsoft Edge</div>
+        </div>
+
+        <div>
+            <img src="img/icons/recyclebinicon.png" alt="" style="width: 44px;">
+            <div>Recycle Bin</div>
+        </div>
+
+        <div>
+            <img src="img/icons/Computer.png" alt="" style="width: 44px;">
+            <div>This PC</div>
+        </div>
+
+        <div>
+            <img src="img/icons/vscode.png" alt="" style="width: 44px;">
+            <div>Visual Studio Code</div>
+        </div>
+
+        <div>
+            <img src="img/icons/calender.png" alt="" style="width: 44px;">
+            <div>Calendar</div>
+        </div>
+
+        <div>
+            <img src="img/icons/yourPhone.png" alt="" style="width: 44px;">
+            <div>My Phone</div>
+        </div>
+
+        <div>
+            <img src="img/icons/firefox-png.png" alt="" style="width: 44px;">
+            <div>Firefox</div>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="weather">
+            <img src="img/icons/cloudyDay.svg" alt="" class="icon">
+            <div class="info">
+                <p>20°C</p>
+                <p>Gradi</p>
+            </div>
+        </div>
+
+        <img id="Menu" src="img/icons/startButton.png" alt="Start Menu">
+        <img id="SearchIcon" src="img/icons/search-icon.svg" alt="Search">
+        <img id="TaskView" src="img/icons/taskView.svg" alt="TaskView">
+        <img id="Widgets" src="img/icons/widgets.svg" alt="Widgets">
+
+        <div class="rightTaskbar">
+            <img src="img/icons/up.svg" alt="" onclick="Fullscreen()" title="CLICK HERE FOR FULL SCREEN">
+            <img src="img/icons/keyboard.svg" alt="" style="width: 44px;">
+
+            <div class="action-center-button" onclick="document.getElementById('acCheck').click()">
+                <img src="img/icons/wifi.svg" alt="" style="width: 44px;">
+                <img src="img/icons/speaker.svg" alt="" style="width: 44px;">
+                <img src="img/icons/batteryFull.svg" alt="" style="width: 44px;">
+            </div>
+
+            <div class="time" id="DateTime">
+                <div id="timedate">
+                    <a id="h">12</a>:<a id="m">00</a>
+                    <a id="mi">000</a>
+                    <br>
+                    <a id="d">01</a>/<a id="mon">1</a>/<a id="y">0</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start menu -->
+    <div class="startMenuPlace">
+        <div class="startmenu">
+            <div class="search">
+                <div class="SearchIcon"></div>
+                <input type="text" class="SearchInput" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Search for your Favorite Application">
+            </div>
+            <div class="pinned">
+                <div class="start-top-elements">
+                    <span>Pinned</span>
+                    <button class="openAll" id="allapps">All apps <img src="img/icons/right.svg" alt="open all apps" class="smallRight"></button>
+                </div>
+                <div class="start-icons" id="myICONS">
+                    <figure id="startWord">
+                        <img src="img/icons/word.svg" alt="MS Word icon" style="width: 44px;">
+                        <figcaption>Word</figcaption>
+                    </figure>
+                    <!-- Other app icons -->
+                </div>
+            </div>
+            <!-- Other sections in start menu -->
+        </div>
+    </div>
+
+    <!-- Search menu -->
+    <div class="searchmenu">
+        <div class="search">
+            <div class="SearchIcon"></div>
+            <input type="text" class="SearchInput" id="myInput1" onkeyup="myFunction1()" placeholder="Search for names.." title="Search for your Favorite Application">
+        </div>
+        <div class="pinned">
+            <!-- Search menu content -->
+        </div>
+    </div>
+
+    <!-- Widget menu -->
+    <div class="widgetMenu">
+        <!-- Widget menu content -->
+    </div>
+
+    <!-- Date time menu -->
+    <div class="container-date-time" id="DateTimeMenu">
+        <!-- Date time menu content -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
